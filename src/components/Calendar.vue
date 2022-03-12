@@ -195,8 +195,8 @@
       placeholder: {
         type: Object as PropType<Placeholder>,
         default: (): Placeholder => ({
-          checkIn: 'Arrivée',
-          checkOut: 'Départ',
+          checkIn: 'Arrival',
+          checkOut: 'Departure',
         }),
       },
     },
@@ -279,7 +279,7 @@
           return 'Du dimanche au dimanche<br/> uniquement'
         }
         if (periodType === 'nightly') {
-          return `Un minimum de ${minimumDuration}<br/> nuit est requis.`
+          return `A minimum duration of ${minimumDuration}<br/> nights is required.`
         }
 
         return ''
